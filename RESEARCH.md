@@ -98,6 +98,10 @@ saturation that reads as calm on blue-black vibrates on paper.
 - Headless staging (`omarchy theme set oraculo-light`) produced 28 files, no
   ignored-file warnings, and no unresolved `{{ ... }}` placeholders in any
   text config. `omarchy theme current` reported `Oraculo Light`.
+- A clean install from the public URL was exercised in an isolated `HOME`;
+  `omarchy theme install https://github.com/PedroAugustoOK/omarchy-oraculo-light-theme`
+  cloned, staged and applied with no ignored-file warnings and zero unresolved
+  placeholders in the text configs.
 - The dark theme was restored afterwards; `theme.name` returned to `oraculo`
   and the active background stayed `Oraculo Veil`.
 - The repository ships no denied files: no `*.lua`, no `alacritty.toml`,
