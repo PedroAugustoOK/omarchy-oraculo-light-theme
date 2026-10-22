@@ -10,9 +10,9 @@ paper. The bright sibling of
 ![Basquiat-inspired Oráculo Light preview](preview.png)
 
 The preview is original neo-expressionist artwork inspired by the visual
-language of Jean-Michel Basquiat: a crown, a rough figure, paint marks,
-marginalia and the six ANSI colours. It is generated from `colors.toml` by
-`scripts/make-preview.sh`; it is not a desktop screenshot and does not reproduce
+language of Jean-Michel Basquiat: a crown, a rough anatomical figure, medical
+and maritime motifs, paint marks, marginalia and a D20. It is a static artwork
+included with the theme; it is not a desktop screenshot and does not reproduce
 a specific artwork.
 
 ## Palette
@@ -161,15 +161,15 @@ pixel-for-pixel copy of every stock theme's furniture.
 
 ### Asset tooling
 
-- Bash, ImageMagick 7 (`magick`; ImageMagick 6's `convert` is used as a
-  fallback), and fontconfig with Liberation Sans or DejaVu Sans for the preview.
+- Bash and ImageMagick 7 (`magick`; ImageMagick 6's `convert` is used as a
+  fallback) for the wallpapers and lock art.
 - `omarchy-theme-color` is optional: the scripts fall back to parsing
   `colors.toml` directly, so the artwork can be regenerated outside an Omarchy
   host.
 - `scripts/check-theme.py` uses only the Python 3 standard library.
 - The 4K wallpaper render is CPU-heavy (a few minutes per theme). CI validates
-  the palette, contrast, assets and the preview/lock renders; it intentionally
-  does not rerender the 4K wallpaper set.
+  the palette, contrast, assets and the lock render; it intentionally does not
+  rerender the 4K wallpaper set. The preview is a static asset.
 
 ## Repository structure
 
@@ -183,17 +183,17 @@ omarchy-oraculo-light-theme/
 ├── preview.png          # 1800×1012 theme-picker artwork
 ├── unlock.png           # transparent lock/boot art (Oráculo sigil)
 ├── preview-unlock.png   # 1920×1080 lock/boot styles preview
-├── scripts/             # make-preview.sh, make-unlock.sh, make-wallpapers.sh, check-theme.py
+├── scripts/             # make-unlock.sh, make-wallpapers.sh, check-theme.py
 ├── README.md
 ├── RESEARCH.md          # light-mode conventions and measured contrast
 └── LICENSE              # MIT
 ```
 
-The asset scripts are reproducible from `colors.toml` alone. Regenerate the
-artwork and run the audit with:
+The wallpaper and lock art scripts are reproducible from `colors.toml` alone;
+the preview is a static, checked-in artwork. Regenerate the generated assets
+and run the audit with:
 
 ```bash
-./scripts/make-preview.sh . "Oráculo Light" preview.png
 ./scripts/make-unlock.sh .
 ./scripts/make-wallpapers.sh .
 ./scripts/check-theme.py .
@@ -201,13 +201,12 @@ artwork and run the audit with:
 
 ## Credits and license
 
-- Theme, palette, wallpapers, lock art and preview: original work for this
-  repository, generated programmatically with ImageMagick. No third-party
-  assets.
+- Theme, palette, wallpapers and lock art: original work for this repository,
+  generated programmatically with ImageMagick. The preview is original static
+  artwork included with the theme. No third-party assets.
 - The preview is an original neo-expressionist composition inspired by
   Jean-Michel Basquiat's visual language; no specific artwork is reproduced.
 - Palette and configuration: MIT (see [LICENSE](LICENSE)).
 - Wallpapers and previews: same MIT license (original works).
 - Built for [Omarchy](https://omarchy.org) (`basecamp/omarchy`). Icon set names
-  belong to Yaru; font rendering in previews uses system fonts, which are not
-  shipped with the repository.
+  belong to Yaru.
