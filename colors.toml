@@ -1,0 +1,39 @@
+# Oráculo Light — the bright sibling of the Oráculo Omarchy theme.
+# Cool paper surfaces tinted sky, deep steel-blue ink, darkened steel accent.
+# All 26 canonical keys are explicit; ANSI stays readable on paper (>=4.5:1).
+
+mode = "light"
+
+accent = "#2C6E9B"
+selection = "#D7E5F1"
+muted = "#9FB2C4"
+
+background = "#F3F7FA"
+dark_background = "#E8EFF5"
+darker_background = "#DCE6EF"
+lighter_background = "#FBFDFF"
+
+foreground = "#1C2B3A"
+dark_foreground = "#5E7389"
+light_foreground = "#334A60"
+bright_foreground = "#1C2B3A"
+
+red = "#B03A48"
+yellow = "#7C6414"
+orange = "#A3562C"
+green = "#2F6B47"
+cyan = "#177076"
+blue = "#2C6E9B"
+magenta = "#9A3F86"
+brown = "#6B4630"
+
+bright_red = "#C24550"
+bright_yellow = "#876F1B"
+bright_green = "#387A52"
+bright_cyan = "#1C7C82"
+bright_blue = "#2F76A8"
+bright_magenta = "#A94D95"
+
+# Steel-blue gradient window borders, soft slate inactive borders.
+hyprland_active_border = "rgba(2C6E9Bee) rgba(174A6Dee) 45deg"
+hyprland_inactive_border = "rgba(9FB2C4aa)"
