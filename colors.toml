@@ -1,13 +1,11 @@
 # Oráculo Light — the bright sibling of the Oráculo Omarchy theme.
 # Cool paper surfaces tinted sky, deep steel-blue ink, darkened steel accent.
-# All 26 canonical keys are explicit. Base ANSI clears 4.5:1 on paper and
-# chrome surfaces; bright ANSI is tuned for the paper field.
 
 mode = "light"
 
 accent = "#2B6A96"
 selection = "#D7E5F1"
-muted = "#9FB2C4"
+muted = "#5C6772"
 
 background = "#F3F7FA"
 dark_background = "#E8EFF5"
