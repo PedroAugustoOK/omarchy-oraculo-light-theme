@@ -157,10 +157,10 @@ saturation that reads as calm on blue-black vibrates on paper.
 - `scripts/check-theme.py` reports no blocking problems. Its notes record the
   selection-fill exception and the bright-ANSI chrome limitation; the
   `bright_blue` separation warning is gone (1.19:1 from the base).
-- Every hex code and contrast ratio in `README.md` was checked against
-  `colors.toml` with `OmarchyOpenCode/tools/check_readme.py`.
-- The light README's claims about the ANSI floors and the selection pairing are
-  measured, not copied from the dark theme.
+- The previous long-form README's hex and contrast figures were checked
+  against `colors.toml` with `OmarchyOpenCode/tools/check_readme.py`. The
+  current README omits numeric palette claims; use `scripts/check-theme.py`
+  for the maintained palette and contrast audit.
 - CI runs the same palette/contrast/asset audit, shell syntax checks and lock
   render on every push and pull request.
 
