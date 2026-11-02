@@ -1,10 +1,12 @@
 # Oráculo Light
 
-![Oráculo Light theme preview](preview.png)
+A light Omarchy theme with cool paper surfaces, deep steel-blue text and a clear blue accent.
 
-A light Omarchy theme with cool paper surfaces, deep steel-blue text and a readable blue accent. The preview is original neo-expressionist artwork inspired by Jean-Michel Basquiat's visual language; it is not a desktop screenshot or a reproduction of a specific artwork.
+![Oráculo Light preview](preview.png)
 
-[**Oráculo**](https://github.com/PedroAugustoOK/omarchy-oraculo-theme) is the dark sibling, with blue-black surfaces and cool text.
+The preview is original neo-expressionist artwork made for this theme, not a desktop screenshot.
+
+Its dark sibling is [Oráculo](https://github.com/PedroAugustoOK/omarchy-oraculo-theme).
 
 ## Install
 
@@ -13,18 +15,15 @@ omarchy theme install https://github.com/PedroAugustoOK/omarchy-oraculo-light-th
 omarchy theme bg next
 ```
 
-Installation applies the theme. The second command cycles its three static backgrounds.
+The first command installs and applies the theme. The second cycles through its wallpapers.
 
-`colors.toml` is the palette source; Omarchy generates application configurations from its templates. The repository does not ship Lua, terminal configuration files or `vscode.json`.
+## Included
 
-Reapply, update, refresh after an Omarchy upgrade, or remove the theme with `omarchy theme set oraculo-light`, `omarchy theme update`, `omarchy theme refresh` and `omarchy theme remove oraculo-light`.
-
-- [Palette and contrast](docs/PALETTE.md)
-- [Development and asset tooling](docs/DEVELOPMENT.md)
-- [Omarchy research](docs/RESEARCH.md)
-- [Changelog](CHANGELOG.md)
-- [License](LICENSE)
+- `colors.toml` — the theme palette.
+- `backgrounds/` — the included wallpapers.
+- Root-level appearance files for Omarchy and the supported applications.
+- `preview.png` — theme artwork.
 
 ## License
 
-MIT.
+MIT. See [LICENSE](LICENSE).
